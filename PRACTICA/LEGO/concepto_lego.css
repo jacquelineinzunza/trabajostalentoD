@@ -1,0 +1,33 @@
+#general {
+    border: black;
+    background-color: aqua;
+    height: 500px;
+    width: 500px;
+    margin: 2px;
+}
+
+#header {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+
+#sidebar {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+#main-conter {
+    width: 100px;
+    vertical-align: top;
+    height: 100px;
+    background-color: palevioletred;
+}
+
+#sidebar,
+#main-conter,
+#header {
+    margin: 8px;
+    display: inline-block;
+}
