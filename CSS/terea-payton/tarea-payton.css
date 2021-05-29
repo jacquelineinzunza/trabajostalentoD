@@ -1,0 +1,240 @@
+            * {
+                margin: 0px;
+                border: 0px;
+                padding: 0px;
+            }
+            
+            #principal {
+                width: 970px;
+                height: auto;
+                background-image: linear-gradient(180deg, #245476, #3773a7);
+            }
+            
+            .nn2 {
+                color: #ffffff;
+                font-size: 30px;
+                margin: 12px;
+                text-decoration: none;
+                text-align: center;
+            }
+            
+            .nn {
+                text-decoration: none;
+                text-align: center;
+                list-style-type: none;
+                display: inline;
+                padding: 14px 16px;
+            }
+            
+            #barra {
+                margin: 0px 60px;
+                background-color: #377fbe;
+                width: 830px;
+                height: 40px;
+            }
+            
+            #boton-bus {
+                width: 50px;
+                height: 36px;
+                background-color: #1c3454;
+                border-radius: 5px;
+                color: white;
+                text-align: center;
+                display: inline-block;
+                font-size: 16px;
+                margin: 12px 0px 0px 3px;
+                cursor: pointer;
+            }
+            
+            #busc {
+                border-color: 1px gray;
+                width: 162px;
+                padding-left: 42px;
+                height: 37px;
+                margin: 7px 3px 0px 45px;
+            }
+            
+            #buscador {
+                border-radius: 5px;
+                margin: -106px 0px 0px 620px;
+                background-color: #414344;
+                width: 320px;
+                height: 70px;
+            }
+            
+            img {
+                margin: 15px;
+                width: 400px;
+                height: auto;
+            }
+            
+            u {
+                size: 10px;
+                margin: 30px 0px 1px 3px;
+                color: #d4b200
+            }
+            
+            .line {
+                display: inline-block;
+                vertical-align: top;
+                margin: 30px 5px 30px 30px;
+                background-color: #ffffff;
+                width: 420px;
+                height: 230px;
+                padding-top: 15px;
+            }
+            
+            #margen-esqu {
+                color: #fcfdfd;
+                padding-top: 30px;
+                vertical-align: text-top;
+                display: inline-block;
+                margin: -152px 0px 50px 685px;
+                font-size: 20px;
+            }
+            
+            .bloque-text {
+                display: inline-block;
+                vertical-align: top;
+            }
+            
+            #cero {
+                display: inline-block;
+                vertical-align: top;
+                margin: 20px 0px 10px 50px;
+                list-style-type: none;
+                font-size: 20px;
+            }
+            
+            .sin-orden {
+                color: #ffffff;
+            }
+            
+            #tres {
+                margin-top: 8px;
+            }
+            
+            #uno {
+                margin-bottom: 5px;
+                margin-left: 30px;
+            }
+            
+            #cuatro {
+                margin-bottom: 5px;
+                margin-left: 30px;
+            }
+            
+            #seis {
+                margin-top: 5px;
+                margin-left: 30px;
+            }
+            
+            #tam-texto {
+                color: aliceblue;
+                text-align: center;
+                display: inline-block;
+                vertical-align: top;
+                margin: 17px 10px;
+                width: 716px;
+                height: 84px;
+            }
+            
+            #poema {
+                text-align: center;
+                display: inline-block;
+                vertical-align: text-top;
+                width: 371px;
+                color: yellowgreen;
+                margin-left: 350px;
+                font-size: 25px;
+            }
+            
+            #peque {
+                color: aliceblue;
+                font-size: 20px;
+            }
+            
+            #started {
+                margin-left: 60px;
+                display: inline-block;
+                vertical-align: top;
+                text-align: center;
+                width: 298px;
+                height: auto;
+            }
+            
+            #applications {
+                text-align: center;
+                display: inline-block;
+                vertical-align: top;
+                width: 283px;
+                height: auto;
+                margin-left: 50px;
+            }
+            
+            #margen-min {
+                margin-left: 90px;
+                margin-top: 5px;
+            }
+            
+            #unico {
+                margin-left: 65px;
+            }
+            
+            #margen-titulo3 {
+                margin-left: 120px;
+                margin-bottom: 5px;
+            }
+            
+            #margen-titulo2 {
+                margin-left: 150px;
+                margin-bottom: 5px;
+            }
+            
+            #unico2 {
+                margin-top: 5px;
+                margin-left: 100px;
+            }
+            
+            #colorcito {
+                color: violet;
+            }
+            
+            #dist1 {
+                padding-left: 20px;
+            }
+            
+            #dist2 {
+                padding-left: 50px;
+            }
+            
+            #dist3 {
+                padding-left: 60px;
+            }
+            
+            #dist4 {
+                padding-left: 40px;
+            }
+            
+            #dis1 {
+                margin-top: 5px;
+                padding-left: 12px;
+            }
+            
+            #dis3 {
+                padding-left: 15px;
+            }
+            
+            footer {
+                height: 10px;
+                text-align: center;
+                padding: 3px;
+                color: white;
+            }
+            
+            .bloque-text {
+                margin: 20px 30px 30px 70px;
+                color: blue;
+                font-size: 20px;
+                text-align: center;
+            }
