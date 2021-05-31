@@ -69,8 +69,20 @@
             return i;
         }
         console.log(3);
-        console.log(4);
+        console.log(4); //no llamoa a la funcion por eso se impreme el valor 
         //respuesta:3,4
+
+        //ejercicio 9
+        function a() { //variable=variable + algo; acumuladores
+            //i++-> i=i+1
+            for (var i = 0; i < 10; i++) { //i =0>2>3>5>6>8>9>11>12
+                i = i + 2;
+                console.log(i);
+            }
+
+        }
+        a(); // llamado a la funcion
+        //respuesta:2,5,8,11
     </script>
 </head>
 
