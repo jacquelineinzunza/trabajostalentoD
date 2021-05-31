@@ -83,6 +83,19 @@
         }
         a(); // llamado a la funcion
         //respuesta:2,5,8,11
+
+        //ejercicio 10
+
+        function a(b, c) { //b=0, c= 10
+            // var i =0; i< 10; i++
+            for (var i = b; i < c; i++) { //i>0>1>>2>3<4>5>6<7<8>9>10
+                console.log(i);
+            }
+            return b * c;
+        }
+        a(0, 10); //0 ese cero no se imprime es solo informativo.
+        console.log(a(0, 10));
+        //resp. 0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,0
     </script>
 </head>
 
