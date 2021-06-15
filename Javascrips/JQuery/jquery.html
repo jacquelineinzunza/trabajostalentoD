@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // funcionalidad etiqueta
+            $('button').click(function() {
+                console.log("estoy en jquery desde input");
+                alert("estoy en jquery");
+            });
+            $('input').click(function() {
+                console.log("estoy en jquery desde input");
+                alert("estoy en jquery etiqueta");
+
+            });
+            // funcionalidad clase(.)
+            $('.input2').click(function() {
+                console.log("estoy en jquery desde input2");
+                alert("estoy en jquery class");
+
+            });
+            // funcionalidad id(#)
+            $('#boton3').click(function() {
+                console.log("estoy en jquery desde input por el id");
+                alert("estoy en jquery en id");
+            });
+            /* $('#boton4').click(function() {
+                     console.log($"#parrafo").text()); $('parrafo').text("esto es texto modificado");
+             });*/
+        }); //cierre principal
+    </script>
+</head>
+
+<body>
+    <div>
+        <button>Jquery</button>
+        <input type="button" value="boton1">
+        <input class="input2" type="button" value="boton2">
+        <input id="boton3" type="button" value="boton3">
+        <input id=boton4 type="button" value="botoon4">
+        <p id="parrafo" class="input2">estoy en un parrafoxxx</p>
+
+
+
+    </div>
+</body>
+
+</html>
