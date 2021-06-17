@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Gato a Ninja</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            for (let i = 0; i <= 4; i++) {
+                $('#principal').append('<img src=img/ninja' + i + '.png  data-alt-src=img/cat' + i + '.png  > <br>');
+
+            }
+            $('img').click(function() {
+
+                var temp = $(this).attr('src');
+                $(this).attr('src', $(this).attr('data-alt-src'));
+                $(this).attr('data-alt-src', temp);
+
+            });
+
+
+        }); //cierre principal
+    </script>
+
+</head>
+
+<body>
+    <div id="principal">
+
+
+
+
+    </div>
+</body>
+
+</html>
