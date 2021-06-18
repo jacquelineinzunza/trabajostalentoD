@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() { //Use ready () para que una función esté disponible después de que se cargue el documento:
+
+            $("p").click(function() {
+                alert("The paragraph was clicked.");
+            });
+            /*El evento de clic ocurre cuando se hace clic en un elemento.
+
+            El método click () activa el evento de clic o adjunta una función para que se ejecute cuando se produce un evento de clic.*/
+            $("#hide").click(function() {
+                $("p").hide(1000);
+            });
+
+            $("#show").click(function() {
+                $("p").show();
+            });
+            /*Con jQuery, puede ocultar y mostrar elementos HTML con los métodos hide()y show():*/
+
+            $("button").click(function() {
+                $("p").toggle();
+            });
+            /* alternar entre ocultar y mostrar un elemento*/
+            $("button").click(function() {
+                $("p").fadeIn();
+            }); /*El método fadeIn() cambia gradualmente la opacidad, para los elementos seleccionados, de oculta a visible (efecto de desvanecimiento).*/
+            $("button").click(function() {
+                $("p").fadeOut();
+            });
+            /*El método fadeOut () cambia gradualmente la opacidad, para los elementos seleccionados, de visible a oculto (efecto de desvanecimiento).*/
+            $("button").click(function() {
+                $("p:first").addClass("intro");
+            });
+            /*El método addClass () agrega uno o más nombres de clase a los elementos seleccionados.*/
+            $("button").click(function() {
+                $("p").before("<p>Hello world!</p>");
+            });
+            /*El método before () inserta el contenido especificado delante (antes) de los elementos seleccionados.*/
+
+            $("button").click(function() {
+                $("p").after("<p>Hello world!</p>");
+            });
+            /*El método after () inserta el contenido especificado después de los elementos seleccionados.*/
+            $("button").click(function() {
+                $("p").append("<b>Appended text</b>");
+            });
+            /*El método append () inserta el contenido especificado al final de los elementos seleccionados.*/
+            $("button").click(function() {
+                $("p").html("Hello <b>world</b>!");
+            });
+            /*El método html () establece o devuelve el contenido (innerHTML) de los elementos seleccionados.
+            Cuando se utiliza este método para establecer contenido, sobrescribe el contenido de TODOS los elementos coincidentes.*/
+            $("button").click(function() {
+                $("img").attr("width", "500");
+            });
+            /*El método attr () establece o devuelve atributos y valores de los elementos seleccionados.
+
+            Cuando se utiliza este método para devolver el valor del atributo, devuelve el valor del PRIMER elemento coincidente.
+
+            Cuando este método se utiliza para establecer valores de atributo, establece uno o más pares de atributo / valor para el conjunto de elementos coincidentes.*/
+
+            $("button").click(function() {
+                $("input:text").val("Glenn Quagmire");
+            });
+            /*El método val () devuelve o establece el atributo de valor de los elementos seleccionados.
+
+            Cuando se usa para devolver valor:
+            este método devuelve el valor del atributo de valor del PRIMER elemento coincidente.
+
+            Cuando se utiliza para establecer el valor:
+            este método establece el valor del atributo de valor para TODOS los elementos coincidentes.
+
+            Nota: El método val () se usa principalmente con elementos de formulario HTML.*/
+            $("button").click(function() {
+                $("p").text("Hello world!");
+            });
+            /*El método text () establece o devuelve el contenido de texto de los elementos seleccionados.
+
+            Cuando se usa este método para devolver contenido, devuelve el contenido de texto de todos los elementos coincidentes (se eliminará el marcado HTML).
+
+            Cuando se utiliza este método para establecer contenido, sobrescribe el contenido de TODOS los elementos coincidentes.
+
+            Sugerencia: Para establecer o devolver el HTML interno (texto + marcado HTML) de los elementos seleccionados, use el método html () .
+
+            */
+        }); //cierre principal
+    </script>
+
+    </style>
+</head>
+
+<body>
+
+    <div id="principal">
+
+
+
+
+    </div>
+</body>
+
+</html>
