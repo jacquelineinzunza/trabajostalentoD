@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Ninja Desapareciendo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('img').click(function() {
+                $(this).hide(1000);;
+
+            });
+
+
+
+            $('#container').append('<br><button id=restaurar>Restaurar</button>');
+            $('button').click(function() {
+                $('img').show(3000);
+            });
+
+        }); //cierre principal
+    </script>
+    <style>
+        #container {
+            width: 850px;
+            height: auto;
+        }
+        
+        img {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <img class="img0" src="ninja.jpg">
+        <img class="img1" src="ninja.jpg">
+        <img class="img2" src="ninja.jpg">
+        <img class="img3" src="ninja.jpg">
+        <img class="img4" src="ninja.jpg">
+        <img class="img5" src="ninja.jpg">
+        <img class="img6" src="ninja.jpg">
+        <img class="img7" src="ninja.jpg">
+
+
+
+
+
+    </div>
+</body>
+
+</html>

@@ -1,12 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>jQuery</title>
-	<link rel="stylesheet" type="text/css" href="debugging_jquery.css">
-	<script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
-	<script type="text/javascript">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="debugging_jquery.css">
+    <script src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script>
         $(document).ready(function() {
-                $('p, h3, li').hoverfunction() {
+            $('p, h3, li').hover(function() {
+                    $(this).css('color', 'white');
+                },
+                function() {
                     $(this).css('color', 'black');
                 });
 
@@ -15,20 +19,17 @@
             });
 
             $('img').click(function() {
-                    $(this).slideUp();
-                );
+                $(this).slideUp();
+            });
 
-                $('h5').click(function() {
-                    $('img').slide Down();
-                });
-
-                $('button').click(function() {
-                    var result = $('input:checked').val;
-                    ()
-                    alert("Thank you for your input, we like " + result + " too!");
-                });
-
-            }); //fin
+            $('h5').click(function() {
+                $('img').slideDown();
+            });
+            $('button').click(function() {
+                var result = $('input:checked').val()
+                alert("Thank you for your input, we like " + result + " too!");
+            });
+        });
     </script>
 </head>
 
