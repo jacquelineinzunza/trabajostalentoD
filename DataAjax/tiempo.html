@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Clima</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('document').ready(function() {
+
+                    // tu codigo acá
+                    $('button').click(function() {
+                                var APPID = '8fcb4b3ee0c9be319fa9f8ffcfba2f47';
+                                var lugar = $('#lugar').val(); //obtener el valor del input
+
+                                var url = 'https://api.openweathermap.org/data/2.5/weather?q=' + lugar + '&APPID=' + APPID;
+
+                                //llamar a la api
+                                $.get(url, function(objeto) {
+                                    console.dir(objeto);
+
+                                    $('#respuestas').html(''); //borrar el contenido
+                                    $('#respuestas').append('<h2>Ciudad: ' + objeto.name + ' </h2>');
+                                    $('#respuestas').append('<p>Temperatura: ' + objeto.main.temp + '</p>');
+                                    $('#respuestas').append('<p>Coordenada Latitud: ' + objeto.coord.lat + '</p>');
+                                    $('#respuestas').append('<p>Coordenada Longitud: ' + objeto.coord.lon + '</p>');
+
+                                }, "json");
+
+
+                                $('#lugar').val(''); //limpiar el input
+                                Math.round(temperatura - 273.15
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <label for="lugar">Ciudad: </label>
+        <input type="text" name="lugar" id="lugar">
+        <button>Consultar</button>
+        <div id="respuestas">
+            <h2>Ciudad: </h2>
+            <p id="temperatura">Temperatura:</p>
+            <p>Coordenada Latitud:</p>
+            <p>Coordenada Longitud:</p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

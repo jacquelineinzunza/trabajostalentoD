@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#boton').click(function() {
+                var city = $('#fname').val();
+                $.get("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=05fbda9b7a747d0509a1f330e0379225", function(respuesta) {
+                    console.dir(respuesta);
+                    $('#respuestas').html(''); //borrar el contenido
+                    $('#respuestas').append('<h2>Ciudad: ' + respuesta.name + ' </h2>');
+                    $('#respuestas').append('<p>Temperatura: ' + respuesta.main.temp + '</p>');
+                    $('#respuestas').append('<p>Coordenada Latitud: ' + respuesta.coord.lat + '</p>');
+                    $('#respuestas').append('<p>Coordenada Longitud: ' + respuesta.coord.lon + '</p>');
+
+
+
+                }, 'json');
+
+            });
+
+
+
+        });
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <label for="lugar">Ciudad: </label>
+        <input type="text" name="lugar" id="lugar">
+        <button id="boton">Consultar</button>
+        <div id="respuestas">
+            <h2>Ciudad: </h2>
+            <p>Temperatura:</p>
+            <p>Coordenada Latitud:</p>
+            <p>Coordenada Longitud:</p>
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>

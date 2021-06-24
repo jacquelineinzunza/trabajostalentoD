@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="e">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reforzamiento</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //console.log('0.-al inicio');
+
+            var arregloTemporal = [];
+            for (let i = 1; i <= 10; i++) {
+                //console.log('1.-al inicio del for');
+                //obtener desde la url una respueta en formato json
+                $.get("https://pokeapi.co/api/v2/pokemon/" + i + "/", function(respuesta) {
+                    // console.dir(respuesta); //imprime la respuesta (objeto)
+                    arregloTemporal.push(respuesta);
+                    //console.log('4.-dentro del get');
+                    arregloTemporal.sort((a, b) => (a.id > b.id) && 1 || -1);
+                    console.log(arregloTemporal);
+                    if (arregloTemporal.length == 10) {
+                        for (let j = 10; j < arregloTemporal.length; j++) {
+                            $('#container').append('<p> el id es: ' + arregloTemporal[j].id + '</p>');
+                            $('#container').append('<p> el nombre es: ' + arregloTemporal[j].name + '</p>');
+                            $('#container').append('<img> el id es: ' + arregloTemporal[j].sprites.front_defaul + '</img>');
+
+                        }
+                    }
+                }, "json");
+                // console.log('2.-despues del get, dentro del for', i);
+            }
+            //console.log('3.-fuera del for')
+        });
+        //console.warn("cuidado");
+        //console.error("Error de codigo");
+        /*                    $('#container').append('<p>El Id es: ' + respuesta.id + ' </p>');
+                            $('#container').append('<p>El nombre es: ' + respuesta.name + ' </p>');
+                            $('p').addClass('miclase'); //hace referencia a una clase de css
+                            $('p').css('color', 'yellow'); //estilo directo sobre el elemento
+                            $('p').css('font-size', '25px');
+                            $('p').css('background-color', 'blue');
+
+                            $('#container').append('<img src="' + respuesta.sprites.front_default + '" alt="">');
+        */
+    </script>
+
+    <style>
+        .miclase {
+            color: cadetblue;
+            font-size: 40px;
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+
+    </div>
+</body>
+
+</html>
