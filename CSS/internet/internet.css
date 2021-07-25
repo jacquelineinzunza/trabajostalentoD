@@ -1,0 +1,143 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    outline: 1px red dotted;
+}
+
+#hrpeq {
+    margin: 10px 0px;
+}
+
+#container {
+    margin: 20px;
+    background-color: aliceblue;
+    width: 900px;
+    height: auto;
+}
+
+#boton2 {
+    background-color: blue;
+}
+
+#boton3 {
+    background-color: orange;
+}
+
+#logo {
+    width: 70px;
+    height: auto;
+    margin-bottom: -20px;
+}
+
+#conter2 {
+    vertical-align: top;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+}
+
+.block {
+    display: inline-block;
+}
+
+nav {
+    height: 25px;
+    color: aliceblue;
+    background-color: skyblue;
+    padding: 8px;
+}
+
+.letra-azul {
+    color: rgb(24, 24, 189);
+}
+
+h1 {
+    color: grey;
+}
+
+.botones {
+    border-radius: 5px;
+    color: aliceblue;
+    margin: 3px;
+    width: 160px;
+    height: 25px;
+}
+
+#dis-1 {
+    margin: 10px 0px;
+    font-size: 14px;
+}
+
+#barra-lateral {
+    vertical-align: top;
+    margin-top: 20px;
+    width: 170px;
+    height: 400px;
+    display: inline-block;
+}
+
+#logos {
+    width: 100px;
+    height: auto;
+}
+
+#tam-img-fon {
+    width: 170px;
+    height: 220px;
+}
+
+#tam-img-ninja {
+    width: 70px;
+    height: 90px;
+    margin-left: 45px;
+}
+
+#text-img {
+    font-size: 20px;
+    width: 140px;
+    height: 70px;
+    text-align: center;
+    color: rgb(226, 235, 235);
+    margin-top: -215px;
+    margin-left: 15px;
+}
+
+#text-rojo {
+    color: red;
+}
+
+#mar-boton1 {
+    margin: 5px 15px;
+    border-radius: 5px;
+    width: 140px;
+    height: 25px;
+    background-color: rgb(80, 198, 245);
+    color: aliceblue;
+}
+
+span {
+    color: blue;
+}
+
+#conter {
+    margin-left: 20px;
+    display: inline-block;
+    width: 700px;
+    height: 300px;
+}
+
+#home {
+    width: 20px;
+    height: auto;
+}
+
+#phone {
+    margin: 10px 5px 5px 10px;
+    width: 35px;
+    height: auto;
+}
+
+#esquema {
+    width: 250px;
+    height: auto;
+}

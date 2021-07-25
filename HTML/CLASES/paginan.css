@@ -1,0 +1,25 @@
+p {
+    color: blue;
+}
+
+span {
+    color: darkgreen;
+}
+
+
+/* 1 o mas elementos*/
+
+.color2 {
+    color: cornflowerblue;
+}
+
+
+/* por id, solo una etiqueta*/
+
+#qwerty {
+    color: darkmagenta;
+}
+
+#ctbc {
+    color: cyan;
+}

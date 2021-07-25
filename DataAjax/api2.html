@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('document').ready(function() {
+            //$('').accion(function(){});
+            for (let i = 1; i <= 10; i++) {
+                //obtener respuesta desde una url en formatoJSON
+                $.get("https://pokeapi.co/api/v2/pokemon/" + i + "/", function(respuesta) {
+                    console.log(respuesta.id);
+                    console.log(respuesta.name);
+                    $('#container').append('<p>El id es:' + respuesta.id + '</p>');
+                    // $('<p>El id es:' + respuesta.id + '</p>').val(Array);
+                    $('#container').append('<p>El nombre es:' + respuesta.name + '</p>');
+                    $('#container').append('<img src="' + respuesta.sprites.front_default + '">');
+                }, "json");
+                var contador = []
+                for (let i = 1; i <= respuesta.id.length; i++) {
+                    contador.push(i)
+                }
+                return contador;
+                //$('#container').append(temp);
+            }
+
+
+            /* function ordenar(p_array_json, p_key) {
+                p_array_json.sort(function(a, b) {
+                return a[p_key] > b[p_key];
+                });
+            }
+            function obtenerpokemones(arr) {
+
+                var temp = []
+                for (let i = 1; i < arr.length; i++) {
+                    temp.push(i)
+                }
+                return temp;
+            }
+            obtenerpokemones(Array);*/
+            //fin JQuery    
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+
+    </div>
+</body>
+
+</html>

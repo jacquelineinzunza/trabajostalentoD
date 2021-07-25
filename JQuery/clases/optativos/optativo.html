@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+
+
+            $('.imagenes').hover('<img src="imagen2.jpg" alt="">');
+
+
+
+
+
+
+        }); //cierre principal
+    </script>
+    <style>
+        #contenedor {
+            background-color: rgb(201, 197, 197);
+        }
+        
+        .fotos {
+            background-color: aliceblue;
+            margin: 50px 200px;
+            border: 7px;
+            border-color: blue;
+        }
+        
+        img {
+            width: 280px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor">
+        <div class="fotos">
+            <img src="imagen1.png" alt="">
+        </div>
+        <div class="fotos">
+            <img src="imagen2.jpg" alt="">
+        </div>
+
+
+    </div>
+</body>
+
+</html>

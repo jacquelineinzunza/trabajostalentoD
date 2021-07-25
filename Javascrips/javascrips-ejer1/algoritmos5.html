@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>algoritmos 5</title>
+    <script>
+               /*ejercicio 1*/
+       /* Configura un array para que los valores negativos se transformen en 0. Por ejemplo, resetNegativos([1,2,-1,-3]) debiera dar como resultado [1,2,0,0].*/
+          function resetNegativos(array){
+            var nuevoArray = array;
+
+           for (let i = 0; i < array.length; i++) {
+               if (array[i] < 0) { 
+               nuevoArray[i] = 0;
+              }
+         }
+         return nuevoArray;
+
+
+          }
+
+
+       console.log(resetNegativos([1,2,-1,-3]));
+       //respuesta:[1,2,0,0]
+
+                   /*ejercicio */
+       
+        /*Dado un array, mueve todos los valores un espacio de derecha a izquierda eliminando el primer valor y dejando un 0 para el último valor. Por ejemplo, moverAdelante([1,2,3]) debiera dar como resultado [2,3,0].*/
+         
+          function moverAdelante(array){
+            for{ (let i = 0; i < array.length; i++)
+            array[i] = array[1]
+            array[1]=array[2]
+                array.pop;
+            array.push;
+            
+              }
+             
+             console.log(array;)
+
+        }
+        moverAdelante([1,2,3]);
+        
+
+
+
+
+
+
+       //respuesta:
+                /*ejercicio */
+/*Configura un array para que el resultado sean los valores en el orden contrario. Por ejemplo, returnReverso([1,2,3]) debe dar [3,2,1].*/
+
+       //respuesta:
+               /*ejercicio */
+
+/*Crea una función que cambie un array repitiendo sus valores originales (manteniendo el mismo orden). Por ejemplo, repetirValores([4,”Ulysses”, 42, false]) debiera dar [4,4, “Ulysses”, “Ulysses”, 42, 42, false, false].*/
+
+       //respuesta:
+
+
+    </script>
+</head>
+
+<body>
+    <script>
+    </script>
+</body>
+
+</html>

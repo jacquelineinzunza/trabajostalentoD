@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina.1</title>
+</head>
+
+<body>
+    <div>
+        <!--action ruta de envio;get envia url ;post envia datos ocultos-->
+        <form action="" method="POST">
+            <label for="name">Nombre</label>
+            <!--el ID es identificador unico para los elemtos-->
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="last_name">Apellido</label>
+            <input type="text" id="last_name" name="last_name">
+            <br>
+            <label for="pass">password</label>
+            <input type="password" id="pass" name="pass">
+            <br>
+            <label for="fecha">fecha</label>
+            <input type="date" id="fecha" name="fecha">
+            <br>
+            <label for="fechatime">fecha</label>
+            <input type="datetime-local" id="fechatime" name="fechatime">
+            <br>
+            <!--radio-->
+            <label for="masc">masculino</label>
+            <input type="radio" id="masc" name="sexo" value="1">
+            <label for="fem">femenino</label>
+            <input type="radio" id="fem" name="sexo" value="2">
+            <br>
+            <!--checkbox  pendiente-->
+            <input type="checkbox" id="verano" name="estacion" value="verano">
+            <label for="verano">verano</label>
+            <input type="checkbox" id="otoño" name="estacion" value="otoño">
+            <label for="otoño">otoño</label>
+            <input type="checkbox" id="invierno" name="estacion" value="invierno">
+            <label for="invierno">invierno</label>
+            <input type="checkbox" id="primavera" name="estacion" value="primavera">
+            <label for="primavera">primavera</label>
+            <br>
+            <!--text area define cols y rows-->
+            <label for="desc">descripcion</label>
+            <textarea name="descripcion" id="desc" cols="20" rows="4"></textarea>
+            <br>
+            <!--selec-->
+            <label for="lenguajes">Lenguajes:</label>
+            <select id="lenguajes" name="lenguajes">
+                <option value="-1">Seleccione lenguaje...</option>
+                <option value="1">HTML</option>
+                <option value="2">CSS</option>
+                <option value="3">JavaScript</option>
+            </select>
+            <input type="button" value="Enviar...">
+            <input type="submit" value="Enviar...">
+            <label for="lenguajes">lenguajes</label>
+
+        </form>
+        <br>
+        <!-- esto es un comentario-->
+        <h1> Hola Mundo </h1>
+        <h2> Hola Mundo </h2>
+        <!-- <h3> Hola Mundo </h3>
+        <h4> Hola Mundo </h4>-->
+        <h5> Hola Mundo </h5>
+        <h6> Hola Mundo </h6>
+        <!--esto es un salto de linea en la pagina-->
+        <br>
+        <!--linea horizontal-->
+        <hr>
+        <!--esto es un parrafo-->
+        <p>kkajkldajlkdjejdlkwjdlkwhhdjahb <br>jdsfhjkshfjksahfjds <br>shajshdjkahdkjahkjabcjkbbqucbucb</p>
+        <!--es un pre formato-->
+        <pre>
+            jschjsjka
+            kjjjjjjjjjjjjjkkkkkjsdanksdnkclsmckl
+            kkkkkkkkkkkkkkkkadmkfajfoiakrejfma
+            kdljfoajdfoiajoijfoias
+        </pre>
+        <br>
+        <!--imagenes-->
+        <!--no me da la etiqueta completa tuve que copiarlo-->
+        <img src="imagen/html.png" alt=""><br>
+        <!-- width ancho de ...;height= alto de..-->
+        <img src="imagen/html 2.jpg" alt="">
+        <img src="https://lenguajecss.com/assets/logo.svg" alt="css" width="170px" height="autopx"><br>
+
+        <!--hiper vinculos (se abre en la misma pagina)-->
+        <a href="https://www.youtube.com">clic para ir a ver videos</a><br>
+        <!--se abre en una pestaña-->
+        <a href="https://Twiter.com" target="_blank">click aqui</a><br>
+        <!--se abre con la imagen-->
+        <a href="https://www.tiktok.com/es"><img src="imagen/descarga.png" alt="tiktok"></a><br>
+        <!--se abre con la imagen-->
+        <a href="https://www.tiktok.com/es"><img src="imagen/tik tok.jpg" alt="tiktok" target="_blank">click aqui></a>
+        <br>
+        <!-- Listas OL UL-->
+        <ol>
+            <li>CSS</li>
+            <li>ÑÑÑÑ</li>
+            <li>JavaScript</li>
+        </ol>
+        <ul>
+            <li>html</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <br>
+        <!--ejemplo ul-->
+        <ul>
+            <li>html</li>
+            <li>CSS</li>
+            <ul>
+                <li>opcion 1</li>
+                <li>opcion 2</li>
+                <ul>
+                    <li>opcion 1.1</li>
+                    <ul>
+                        <li>
+                            <a href="https://www.google.cl">google</a>
+                        </li>
+                    </ul>
+                </ul>
+            </ul>
+        </ul>
+        <br>
+        <!--tablas-->
+        <table>
+            <!--filas-->
+            <thead>
+                <!--cabeceras o titulos-->
+                <tr>
+                    <!--elementos-->
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>jacqueline</td>
+                    <td>@jac.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td>jjaj@jjj</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+* {
+    /*outline: dotted red;*/
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.alin {
+    background-image: linear-gradient(to right, #ca7878e0, #f5f1f577, #726ba7);
+    display: inline-block;
+    margin: 7px;
+    width: 320px;
+    height: 650px;
+    vertical-align: top;
+}
+
+#principal {
+    background-image: linear-gradient(to right, #3e2b32, #74656cee, #3e2b32);
+    width: 1030px;
+    height: 1085px;
+}
+
+#encabezado {
+    background-color: #9997ac;
+    padding-bottom: 30px;
+    width: 1030px;
+    height: 35px;
+}
+
+#about {
+    vertical-align: top;
+    display: inline-block;
+    background-image: linear-gradient(180deg, #f5f1f5, #f5f1f5cc);
+    margin: 15px 15px 10px 5px;
+    width: 530px;
+    height: 250px;
+}
+
+p {
+    margin: 10px;
+    color: black;
+    width: auto;
+}
+
+u {
+    margin-left: 10px;
+    color: blueviolet;
+}
+
+#la-mode {
+    margin-left: 15px;
+}
+
+#pie-pagina {
+    margin-top: 5px;
+    background-color: #f5f1f5cc;
+    width: 1030px;
+    height: 70px;
+}
+
+#titulo-pri {
+    padding-top: 6px;
+    text-indent: 20px;
+    display: inline-block;
+}
+
+#titulo-esq {
+    margin-left: 420px;
+    display: inline-block;
+}
+
+.barra_gris {
+    background-image: linear-gradient(white, grey, gray);
+    text-indent: 5px;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+}
+
+#tam-foto {
+    margin: 15px 17px 10px 15px;
+    display: inline-block;
+    width: 430px;
+    height: 240px;
+    border: 6px solid grey;
+}
+
+.foto-mediana {
+    width: 320px;
+    height: auto;
+}
+
+.tam-logo {
+    width: 35px;
+    margin: 10px 10px 5px 15px;
+    height: auto;
+    display: inline-block;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    background-color: #ca7878e0;
+    border: #cc4e4ee0;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 10px;
+    margin: 10px 110px;
+    cursor: pointer;
+}
+
+.rrss {
+    display: inline-block;
+    width: 15px;
+    height: auto;
+}
+
+.alin-rrss {
+    display: inline-block;
+    padding-top: 12px;
+}
+
+h4 {
+    text-align: center;
+    padding-top: 5px;
+    color: rgba(128, 128, 128, 0.774);
+}
+
+#logito {
+    margin-left: 360px;
+}
+
+.tam {
+    min-height: 180px;
+}
+
+a {
+    margin: 3px;
+    clear: none;
+    color: #9997ac
+}

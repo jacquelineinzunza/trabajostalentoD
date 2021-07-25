@@ -1,0 +1,150 @@
+p {
+    background-color: blue;
+}
+
+div {
+    background-image: url("cherries.png");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+p {
+    color: blue;
+}
+
+#importante {
+    font-size: 36px;
+}
+
+.info {
+    background-color: rgb(189, 98, 192);
+    border: 1px solid black;
+}
+
+a {
+    width: 25px;
+}
+
+div {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 250px;
+    padding: 30px;
+}
+
+h1 {
+    background: #0d7539;
+}
+
+button {
+    border: 2px dotted green;
+}
+
+div {
+    border: 1px solid #000000;
+}
+
+p {
+    border-right: 1px groove rgb(100, 100, 100);
+    border-left: 1px groove rgb(200, 200, 200);
+}
+
+
+/*Esta propiedad ajusta todos los elementos de borde
+en una sola línea. Así, el primer valor es el grosor
+del borde. El segundo valor es tipo de borde, mientras
+que el tercero es el color del borde. El color puede 
+ser hex, rgb o código semántico.
+
+La propiedad border puede separarse en distintas líneas
+utilizando border-width, border-style y border color.
+Además, puedes seleccionar específicamente qué borde 
+modificar utilizando border-top (arriba), border-bottom
+(abajo), border-right (a la derecha) y border-left 
+(a la izquierda).*/
+
+button {
+    border-radius: 5px;
+}
+
+
+/*esta propiedad permite dar una apariencia curva
+a las esquinas de tu borde.*/
+
+h1 {
+    text-align: center;
+}
+
+
+/*Esta propiedad se utiliza para establecer la alineación horizontal de cualquier texto. El texto puede estar centrado, alineado a la izquierda o a la derecha, o justificado. Esta propiedad solo funcionará si también presenta un bloque.
+
+*/
+
+a {
+    text-decoration: none;
+}
+
+
+/*Es utilizada para agregar o remover underlines (subrayados), overlines (línea sobre) y line-throughs (tachado).
+
+*/
+
+p {
+    font-family: arial, verdana, sans-serif;
+}
+
+
+/*fuentes*/
+
+h3 {
+    font-size: 10pt;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    font-size: 1.2em;
+}
+
+span {
+    font-size: 80%;
+}
+
+
+/*tamaños fuente*/
+
+span {
+    font-style: italic;
+}
+
+
+/*inclinacion de la letra*/
+
+p {
+    font-weight: bold;
+}
+
+
+/*grosor de una linea de caracteres*/
+
+span {
+    font-weight: 600;
+}
+
+<h1>Hello <span>World</span></h1>
+/* por defecto pone al elemento en la misma línea*/
+
+vertical-align {
+    top: ;
+    default: ;
+    middle: ;
+}
+
+
+/*esto es alineacion vertical*/

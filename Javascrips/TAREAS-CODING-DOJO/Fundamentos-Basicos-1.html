@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Basicos 1</title>
+    <script>
+        /* Ejercicio 1*/
+        /*Obtén del 1 al 255: Escribe una función
+        que devuelve un array con todos los 
+        números del 1 al 255.*/
+
+        function devolverNum() {
+            var array = [];
+            for (var i = 1; i < 256; i++) {
+                array.push(i);
+            }
+            return array;
+
+        }
+        devolverNum();
+
+
+
+
+        /* Ejercicio 2*/
+        /*Consigue pares hasta 1000: Escribe una función
+         que entregue la suma de todos los números pares
+          del 1 al 1000 - Puedes usar un operador de
+           módulo para este ejercicio. */
+        function sumaPares() {
+            var sum = 0;
+            for (var i = 1; i < 1001; i++) {
+                if (i % 2 === 0) {
+                    sum += i;
+                }
+            }
+            return sum;
+        }
+        sumaPares();
+
+        /* Ejercicio 3*/
+        /*Suma impares hasta 5000: Escribe una función
+         que devuelva la suma de todos los números impares
+         entre 1 y 5000 (ej: 1+3+5+...+4997+4999).*/
+
+        function SumaImpares() {
+            var sum = 0;
+            for (var i = 1; i <= 5000; i++) {
+                if (i % 2 == 1) {
+                    sum = sum + i;
+                }
+            }
+            return sum;
+        }
+        SumaImpares();
+
+
+
+        /* Ejercicio 4*/
+
+        /*Itera un array: Escribe una función que
+         devuelva la suma de todos los valores 
+         dentro de un array (ej:  [1,2,5] retorna
+          8. [-5,2,5,12] retorna 14).  */
+        function SumaArreglo(array) {
+            var sum = 0;
+            for (var i = 0; i < array.length; i++) {
+                sum = sum + array[i];
+            }
+
+            return sum;
+
+        }
+
+        SumaArreglo([-5, 2, 5, 12]);
+
+        /* Ejercicio 5*/
+        /*Encuentra el mayor (max): Dado un array
+         con múltiples valores, escribe una función
+          que devuelva el número mayor (ej: para
+          [-3,3,5,7] el número mayor (max) es 7). */
+
+        function maXarreglo(array) {
+            var max = array[0];
+            for (var i = 0; i < array.length; i++) {
+                if (max < array[i]) {
+                    max = array[i];
+                }
+            }
+            return max;
+        }
+        maXarreglo([-3, 3, 5, 7]);
+        /* Ejercicio 6*/
+        /*Encuentra el promedio (avg): Dado un array
+         con múltiples valores, escribe una función
+          que devuelva el promedio de los valores (ej: 
+        para [1,3,5,7,20] el promedio es 7.2).*/
+
+        function promedio(array) {
+            var sum = 0;
+            for (var i = 0; i < array.length; i++) {
+                sum = sum + array[i]
+            }
+            return sum / array.length;
+        }
+        promedio([1, 3, 5, 7, 20]);
+        /* Ejercicio 7*/
+        /*Array de impares: Escribe una función 
+        que devuelva un array de todos los números 
+        impares entre 1 y 50 (ej: [1,3,5, …, 47,49]).
+         Pista: Usa el método ‘push’.*/
+
+        function ImprecionImpar() {
+            var array = [];
+            for (var i = 0; i <= 50; i++) {
+                if (i % 2 !== 0) {
+                    array.push[i];
+                }
+
+            }
+            return array;
+        }
+        ImprecionImpar();
+
+        /* Ejercicio 8*/
+        /*Mayor que Y: Dado un valor Y, escribe una función que toma un 
+        array y devuelve los valores mayores que Y. Por ejemplo, si arr 
+        = [1,3,5,7] y Y = 3, tu función devolverá 2 (hay 2 números en 
+        el array mayores que 3, esto son 5 y 7). 
+*/
+
+        function comparaCion(array, Y) {
+            var temp = 0;
+            for (var i = 0; i < array.length; i++) {
+                if (array[i] > Y) {
+                    temp++;
+                }
+
+            }
+            return temp;
+        }
+        comparaCion([1, 3, 5, 7], 3);
+
+
+
+        /* Ejercicio 9*/
+        /*Cuadrados: Dado un array con múltiples valores, escribe una
+         función que reemplace cada valor por el cuadrado del mismo valor 
+         (ej: [1,5,10,-2] será [1,25,100,4]).
+*/
+        function MultiplicarPorsiMismo(array) {
+            for (var i = 0; i < array.length; i++) {
+                array[i] = array[i] * array[i];
+            }
+            return array
+        }
+
+        MultiplicarPorsiMismo([1, 5, 10, -2]);
+
+        /* Ejercicio 10*/
+        /*Negativos: Dado un array con múltiples valores, escribe una 
+        función que reemplace cualquier número negativo dentro del array 
+        por 0. Cuando el programa esté listo, el array no debiera contener
+         números negativos (ej: [1,5,10,-2] se convertirá en [1,5,10,0]).
+*/
+        function NoNegativos(array) {
+            for (var i = 0; i <= array.length; i++) {
+                if (array[i] < 0) {
+                    array[i] = 0
+                }
+            }
+
+            return array;
+        }
+
+        NoNegativos([1, 5, 10, -2]);
+
+
+        //respuesta:
+        /* Ejercicio 11*/
+        /*Max/Min/Avg: Dado un array con múltiples valores, escribe una 
+        función que devuelva un nuevo array que solo contenga el valor
+         mayor (max), menor (min) y promedio (avg) del array original 
+         (ej: [1,5,10,-2] devolverá [10,-2,3.5]).
+*/
+        function minmaxpro(array) {
+            var min = array[0];
+            var max = array[0];
+            var sum = array[0];
+            for (var i = 1; i < array.length; i++) {
+                if (array[i] > max) {
+                    max = array[i];
+                }
+                if (array[i] < min) {
+                    min = array[i];
+                }
+                sum = sum + array[i];
+            }
+            var temp = sum / array.length;
+            var temp2 = [max, min, temp];
+            return temp2;
+        }
+        minmaxpro([1, 5, 10, -2]);
+
+
+
+
+
+        /* Ejercicio 12*/
+        /*Intercambia Valores: Escribe una función que intercambie el 
+        primer y el último valor de cualquier array. La extensión mínima
+         predeterminada del array es 2 (ej: [1,5,10,-2] será [-2,5,10,1]). 
+*/
+        function interCambio(array) {
+            var temp = array[0];
+            array[0] = array[array.length - 1];
+            array[array.length - 1] = temp;
+            return array;
+        }
+        interCambio([1, 5, 10, -2]);
+
+
+
+        /* Ejercicio 13*/
+        /*De Número a String: Escribe una función que tome un array de 
+        números y reemplace cualquier valor negativo por el string ‘Dojo’.
+         Por ejemplo, dado el array = [-1,-3,2], tu función devolverá 
+         [‘Dojo’,‘Dojo’,2].
+*/
+
+
+        function CambiarNumeroporString(array) {
+            for (var i = 0; i < array.length; i++) {
+                if (array[i] < 0) {
+                    array[i] = 'Dojo';
+
+                }
+            }
+            return array
+        }
+
+        CambiarNumeroporString([-1, -3, 2]);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

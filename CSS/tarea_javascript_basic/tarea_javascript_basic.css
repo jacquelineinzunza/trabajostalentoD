@@ -1,0 +1,80 @@
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#principal {
+    background-color: #1b345b;
+    width: 970px;
+    height: 650px;
+    padding: 10px;
+}
+
+.aline {
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#encabezado {
+    color: rgb(218, 224, 224);
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 40px;
+    background-color: #cf3036;
+    margin-bottom: 10px;
+}
+
+a {
+    color: rgba(0, 255, 255, 0.822);
+}
+
+#barra_nave {
+    padding-top: 5px;
+    color: rgba(0, 255, 255, 0.822);
+    padding-left: 25px;
+    background-color: #297d8c;
+    width: 170px;
+    height: 205px;
+    margin-right: 5px;
+}
+
+#list-aline {
+    margin-left: 10px;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+#sin_viñeta {
+    list-style-type: none;
+}
+
+#texto {
+    color: #e6f6ff;
+    padding: 10px 10px 10px 20px;
+    background-color: #0e1822;
+    width: 730px;
+    height: 490px;
+    margin-left: 5px;
+}
+
+#pie_pagina {
+    margin-top: 10px;
+    border-radius: 10px;
+    min-height: 30px;
+    background-color: #5d6673;
+    padding: 5px;
+    color: #e6f6ff
+}
+
+.lista {
+    margin-left: 10px;
+}
+
+.texto-sub {
+    color: rgb(126, 18, 214);
+}

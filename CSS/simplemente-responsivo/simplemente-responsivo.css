@@ -1,0 +1,49 @@
+        * {
+            margin: 0px;
+            border: 0px;
+            padding: 5px;
+        }
+        
+        #cnt-prin {
+            width: 1000px;
+            height: auto;
+        }
+        
+        .barra-prin {
+            margin-bottom: 10px;
+            width: 100%;
+            height: 50px;
+            background-color: grey;
+        }
+        
+        .text-prin {
+            margin-bottom: 10px;
+            font-size: 23px;
+            width: 100%;
+            height: 120px;
+            background-color: rgb(235, 233, 233);
+        }
+        
+        footer {
+            width: 100%;
+            height: 30px;
+            background-color: rgb(230, 230, 16);
+        }
+        
+        @media only screen and (min-width: 1024px) {
+            .max-footer {
+                display: none;
+            }
+        }
+        
+        @media only screen and (min-width:481px) and (max-width: 1023px) {
+            .medium-footer {
+                display: none;
+            }
+        }
+        
+        @media only screen and (max-width: 480px) {
+            .min-footer {
+                display: none;
+            }
+        }
